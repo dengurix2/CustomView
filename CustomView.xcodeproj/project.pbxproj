@@ -14,6 +14,8 @@
 		691E677C212E5481005720FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691E677A212E5481005720FF /* LaunchScreen.storyboard */; };
 		691E6787212E5481005720FF /* CustomViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691E6786212E5481005720FF /* CustomViewTests.swift */; };
 		691E6792212E5481005720FF /* CustomViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691E6791212E5481005720FF /* CustomViewUITests.swift */; };
+		691E67A0212E54AB005720FF /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691E679F212E54AB005720FF /* MyCustomView.xib */; };
+		691E67A2212E5511005720FF /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691E67A1212E5511005720FF /* MyCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		691E678D212E5481005720FF /* CustomViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		691E6791212E5481005720FF /* CustomViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewUITests.swift; sourceTree = "<group>"; };
 		691E6793212E5481005720FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		691E679F212E54AB005720FF /* MyCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
+		691E67A1212E5511005720FF /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				691E6771212E547F005720FF /* AppDelegate.swift */,
 				691E6773212E547F005720FF /* ViewController.swift */,
 				691E6775212E547F005720FF /* Main.storyboard */,
+				691E679F212E54AB005720FF /* MyCustomView.xib */,
+				691E67A1212E5511005720FF /* MyCustomView.swift */,
 				691E6778212E5481005720FF /* Assets.xcassets */,
 				691E677A212E5481005720FF /* LaunchScreen.storyboard */,
 				691E677D212E5481005720FF /* Info.plist */,
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691E677C212E5481005720FF /* LaunchScreen.storyboard in Resources */,
+				691E67A0212E54AB005720FF /* MyCustomView.xib in Resources */,
 				691E6779212E5481005720FF /* Assets.xcassets in Resources */,
 				691E6777212E547F005720FF /* Main.storyboard in Resources */,
 			);
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691E67A2212E5511005720FF /* MyCustomView.swift in Sources */,
 				691E6774212E547F005720FF /* ViewController.swift in Sources */,
 				691E6772212E547F005720FF /* AppDelegate.swift in Sources */,
 			);

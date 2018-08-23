@@ -10,25 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyView" customModule="CustomView" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCustomView" customModule="CustomView" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaz-VU-E5A">
-                    <rect key="frame" x="126" y="85" width="49" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </switch>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-VK-ryT">
-                    <rect key="frame" x="119" y="26" width="61" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyCustomView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-VK-ryT">
+                    <rect key="frame" x="81" y="36" width="137" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaz-VU-E5A">
+                    <rect key="frame" x="126" y="85" width="51" height="31"/>
+                </switch>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MyCustomView" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFJ-9t-6aF">
+                    <rect key="frame" x="89" y="144" width="121" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hFJ-9t-6aF" secondAttribute="bottom" constant="126" id="4Le-bX-rQY"/>
+                <constraint firstItem="hFJ-9t-6aF" firstAttribute="top" secondItem="Kaz-VU-E5A" secondAttribute="bottom" constant="28" id="Gj7-vO-iwO"/>
+                <constraint firstItem="Kaz-VU-E5A" firstAttribute="top" secondItem="cCG-VK-ryT" secondAttribute="bottom" constant="25" id="HkD-Xp-54Q"/>
+                <constraint firstItem="hFJ-9t-6aF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Iw8-dM-nd0"/>
+                <constraint firstItem="Kaz-VU-E5A" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NkC-td-Ebe"/>
+                <constraint firstItem="cCG-VK-ryT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TNs-wM-cd8"/>
+                <constraint firstItem="cCG-VK-ryT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="j98-nD-5nk"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
