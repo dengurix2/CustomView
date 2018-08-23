@@ -10,6 +10,8 @@ import UIKit
 
 @IBDesignable class MyCustomView: UIView {
     
+    @IBOutlet weak var myCustomViewLabel: UILabel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadFromNib()

@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myCustomView: MyCustomView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        myCustomView.myCustomViewLabel.text = "ViewController"
     }
 
     override func didReceiveMemoryWarning() {
